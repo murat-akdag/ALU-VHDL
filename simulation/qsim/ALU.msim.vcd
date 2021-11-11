@@ -1,0 +1,332 @@
+$comment
+	File created using the following command:
+		vcd file ALU.msim.vcd -direction
+$end
+$date
+	Tue Dec 18 19:24:04 2018
+$end
+$version
+	ModelSim Version 10.3c
+$end
+$timescale
+	1ps
+$end
+
+$scope module ALU_vlg_vec_tst $end
+$var reg 1 ! clock $end
+$var reg 4 " giris_1 [3:0] $end
+$var reg 4 # giris_2 [3:0] $end
+$var reg 4 $ s_giris [3:0] $end
+$var wire 1 % alu_cikis [3] $end
+$var wire 1 & alu_cikis [2] $end
+$var wire 1 ' alu_cikis [1] $end
+$var wire 1 ( alu_cikis [0] $end
+$var wire 1 ) cikis_elde $end
+$var wire 1 * sampler $end
+
+$scope module i1 $end
+$var wire 1 + gnd $end
+$var wire 1 , vcc $end
+$var wire 1 - unknown $end
+$var tri1 1 . devclrn $end
+$var tri1 1 / devpor $end
+$var tri1 1 0 devoe $end
+$var wire 1 1 cikis_elde~output_o $end
+$var wire 1 2 alu_cikis[0]~output_o $end
+$var wire 1 3 alu_cikis[1]~output_o $end
+$var wire 1 4 alu_cikis[2]~output_o $end
+$var wire 1 5 alu_cikis[3]~output_o $end
+$var wire 1 6 clock~input_o $end
+$var wire 1 7 clock~inputclkctrl_outclk $end
+$var wire 1 8 giris_2[1]~input_o $end
+$var wire 1 9 giris_2[2]~input_o $end
+$var wire 1 : giris_2[3]~input_o $end
+$var wire 1 ; giris_2[0]~input_o $end
+$var wire 1 < u1|cout~0_combout $end
+$var wire 1 = s_giris[1]~input_o $end
+$var wire 1 > giris_1[1]~input_o $end
+$var wire 1 ? giris_1[3]~input_o $end
+$var wire 1 @ giris_1[0]~input_o $end
+$var wire 1 A giris_1[2]~input_o $end
+$var wire 1 B u1|cout~1_combout $end
+$var wire 1 C s_giris[0]~input_o $end
+$var wire 1 D u1|Add0~1 $end
+$var wire 1 E u1|Add0~3 $end
+$var wire 1 F u1|Add0~5 $end
+$var wire 1 G u1|Add0~7 $end
+$var wire 1 H u1|Add0~8_combout $end
+$var wire 1 I u1|cout~2_combout $end
+$var wire 1 J u1|cout~3_combout $end
+$var wire 1 K u1|cout~q $end
+$var wire 1 L s_giris[2]~input_o $end
+$var wire 1 M u2|lojik_cikis~2_combout $end
+$var wire 1 N u1|Add0~0_combout $end
+$var wire 1 O u2|lojik_cikis~4_combout $end
+$var wire 1 P u2|lojik_cikis~3_combout $end
+$var wire 1 Q u2|lojik_cikis~5_combout $end
+$var wire 1 R u2|lojik_cikis~6_combout $end
+$var wire 1 S s_giris[3]~input_o $end
+$var wire 1 T u1|Add1~0_combout $end
+$var wire 1 U u1|ar_cikis~0_combout $end
+$var wire 1 V u1|ar_cikis~1_combout $end
+$var wire 1 W u3|cikis[0]~0_combout $end
+$var wire 1 X u2|lojik_cikis~9_combout $end
+$var wire 1 Y u2|lojik_cikis~10_combout $end
+$var wire 1 Z u2|lojik_cikis[1]~7_combout $end
+$var wire 1 [ u2|lojik_cikis~8_combout $end
+$var wire 1 \ u2|lojik_cikis~11_combout $end
+$var wire 1 ] u1|ar_cikis~2_combout $end
+$var wire 1 ^ u1|Add1~1 $end
+$var wire 1 _ u1|Add1~2_combout $end
+$var wire 1 ` u1|Add0~2_combout $end
+$var wire 1 a u1|ar_cikis~3_combout $end
+$var wire 1 b u1|ar_cikis~4_combout $end
+$var wire 1 c u3|cikis[1]~1_combout $end
+$var wire 1 d u1|Add2~0_combout $end
+$var wire 1 e u1|Add0~4_combout $end
+$var wire 1 f u1|Add1~3 $end
+$var wire 1 g u1|Add1~4_combout $end
+$var wire 1 h u1|ar_cikis~5_combout $end
+$var wire 1 i u1|Add3~0_combout $end
+$var wire 1 j u1|ar_cikis~6_combout $end
+$var wire 1 k u2|lojik_cikis~13_combout $end
+$var wire 1 l u2|lojik_cikis~14_combout $end
+$var wire 1 m u2|lojik_cikis~12_combout $end
+$var wire 1 n u2|lojik_cikis~15_combout $end
+$var wire 1 o u3|cikis[2]~2_combout $end
+$var wire 1 p u2|lojik_cikis~17_combout $end
+$var wire 1 q u2|lojik_cikis~16_combout $end
+$var wire 1 r u2|lojik_cikis~21_combout $end
+$var wire 1 s u2|lojik_cikis~18_combout $end
+$var wire 1 t u2|lojik_cikis~19_combout $end
+$var wire 1 u u2|lojik_cikis~20_combout $end
+$var wire 1 v u1|Add0~6_combout $end
+$var wire 1 w u1|Add1~5 $end
+$var wire 1 x u1|Add1~6_combout $end
+$var wire 1 y u1|ar_cikis~7_combout $end
+$var wire 1 z u1|Add2~1_combout $end
+$var wire 1 { u1|Add3~1_combout $end
+$var wire 1 | u1|ar_cikis~8_combout $end
+$var wire 1 } u3|cikis[3]~3_combout $end
+$var wire 1 ~ u2|lojik_cikis [3] $end
+$var wire 1 !! u2|lojik_cikis [2] $end
+$var wire 1 "! u2|lojik_cikis [1] $end
+$var wire 1 #! u2|lojik_cikis [0] $end
+$var wire 1 $! u1|ar_cikis [3] $end
+$var wire 1 %! u1|ar_cikis [2] $end
+$var wire 1 &! u1|ar_cikis [1] $end
+$var wire 1 '! u1|ar_cikis [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+b1001 "
+b100 #
+b1 $
+0(
+0'
+0&
+0%
+0)
+x*
+0+
+1,
+x-
+1.
+1/
+10
+01
+02
+03
+04
+05
+06
+07
+08
+19
+0:
+0;
+0<
+0=
+0>
+1?
+1@
+0A
+0B
+1C
+0D
+1E
+0F
+1G
+0H
+0I
+0J
+0K
+0L
+0M
+1N
+0O
+1P
+1Q
+1R
+0S
+1T
+1U
+1V
+0W
+0X
+0Y
+0Z
+0[
+0\
+0]
+1^
+0_
+0`
+0a
+0b
+0c
+0d
+1e
+0f
+1g
+1h
+1i
+1j
+1k
+1l
+0m
+1n
+0o
+0p
+0q
+0r
+0s
+1t
+1u
+1v
+0w
+0x
+0y
+1z
+0{
+0|
+0}
+0#!
+0"!
+0!!
+0~
+0'!
+0&!
+0%!
+0$!
+$end
+#50000
+1!
+16
+0*
+17
+1~
+1!!
+1%!
+1'!
+1#!
+1o
+1W
+12
+14
+1(
+1&
+#100000
+0!
+06
+1*
+07
+#150000
+1!
+16
+0*
+17
+#200000
+0!
+06
+1*
+07
+#250000
+1!
+16
+0*
+17
+#300000
+0!
+06
+1*
+07
+#350000
+1!
+16
+0*
+17
+#400000
+0!
+06
+1*
+07
+#450000
+1!
+16
+0*
+17
+#500000
+0!
+06
+1*
+07
+#550000
+1!
+16
+0*
+17
+#600000
+0!
+06
+1*
+07
+#650000
+1!
+16
+0*
+17
+#700000
+0!
+06
+1*
+07
+#750000
+1!
+16
+0*
+17
+#800000
+0!
+06
+1*
+07
+#850000
+1!
+16
+0*
+17
+#900000
+0!
+06
+1*
+07
+#950000
+1!
+16
+0*
+17
+#1000000

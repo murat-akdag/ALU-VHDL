@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+
+entity ALU is
+	Port(
+		giris_1:in std_logic_vector(3 downto 0);
+		giris_2:in std_logic_vector(3 downto 0);
+		cikis_elde:out std_logic;
+		cikis:out std_logic_vector(3 downto 0)
+	);
+end ALU;
+
+architecture Behavioral of ALU is
+
+begin
+
+cikis<=giris_1+giris_2;
+
+
+end Behavioral;
