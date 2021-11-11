@@ -8,4 +8,4 @@
 <img src="2lojik.PNG" width="auto">
 
 ## Mux
-<img src=3mux.PNG" width="auto">
+<img src="3mux.PNG" width="auto">
